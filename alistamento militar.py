@@ -3,8 +3,10 @@ from time import sleep
 print('----------ALISTAMENTO MILITAR-----------')
 print('digite [parar] para encerrar o programa.')
 while True:
+    nome = str(input('digite seu nome:'))
+    print(f'ola {nome}')
     print('digite seu sexo')
-    entrada = str(input('entrada:').lower())
+    entrada = str(input('entrada:').lower()).strip()
     if  entrada == 'masculino':
         ano_nascimento = int(input('ano de nascimento:'))
         ano_atual = datetime.datetime.today().year
